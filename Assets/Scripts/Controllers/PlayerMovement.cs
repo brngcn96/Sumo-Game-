@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
+
 
 public class PlayerMovement : MonoBehaviour
 {
 
-    NavMeshAgent agent;
+    
     [SerializeField] float xValue;
     [SerializeField] float zValue;
-    [SerializeField] float speed = 5f;
+    [SerializeField] float speed = 10f;
     // Start is called before the first frame update
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     
     public void moveToDestination(Vector3 point){
-        agent.SetDestination(point);
+        
     }
     
 

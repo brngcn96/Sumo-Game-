@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     Camera myCamera;
     PlayerMovement movement;
 
-    [SerializeField]float speed = 5f;
     
     // Start is called before the first frame update
     void Start()
@@ -22,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         movement.moveTouch();    
+        movement.moveTouch();   
     }
 
 
