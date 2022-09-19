@@ -10,26 +10,35 @@ using TMPro;
 public class TimerScript : MonoBehaviour
 {
 
-    public static float timeLeft = 10;
+
+    public float timeLeft;
     [SerializeField] TMP_Text timerText;
 
-    // Start is called before the first frame update
-    void Start()
+
+    // Singleton instance
+    public static TimerScript instance;
+
+    void Awake()
     {
-        
+        instance = this;
     }
 
-    // Update is called once per frame
+
+    private void Start()
+    {
+        timeLeft = 60;
+    }
+
+
+    
     void Update()
     {
-        
+        //Checking if time is over
         if(timeLeft>0){
             timeLeft -= Time.deltaTime;             
             timerText.text = Math.Ceiling(timeLeft).ToString();
 
         }
-        else{
-            
-        }
+
     }
 }

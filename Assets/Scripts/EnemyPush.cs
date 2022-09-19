@@ -7,21 +7,11 @@ public class EnemyPush : MonoBehaviour
 
     Rigidbody rb;
     [SerializeField] float force = 10f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //rb = PlayerManager.instance.gameObject.GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        //Enemies also can push my player 
         rb = collision.collider.gameObject.GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -29,10 +19,8 @@ public class EnemyPush : MonoBehaviour
             forceDirection.y = 0;
             forceDirection.Normalize();
             rb.AddForceAtPosition(forceDirection * force, transform.position, ForceMode.Impulse);
-            //rb.AddForce(transform.forward * 200, ForceMode.Impulse);
 
         }
-
 
     }
 

@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{2CAB1D1E-2E6D-74AC-79C0-F8F5D20B205F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ButtonActions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenuManager.cs">
     <Files>
       <File FileName="Assets/Scripts/Controllers/PlayerController.cs" Line="27" Column="1" />
-      <File FileName="Assets/Scripts/Controllers/PlayerManager.cs" Line="19" Column="30" />
-      <File FileName="Assets/Scripts/Controllers/PlayerMovement.cs" Line="17" Column="6" />
-      <File FileName="Assets/Scripts/Controllers/EnemyController.cs" Line="22" Column="9" />
-      <File FileName="Assets/PlayerPush.cs" Line="25" Column="1" />
-      <File FileName="Assets/EnemyPush.cs" Line="12" Column="6" />
-      <File FileName="Assets/GameEnd.cs" Line="30" Column="41" />
-      <File FileName="Assets/TimerScript.cs" Line="14" Column="22" />
-      <File FileName="Assets/Scripts/ButtonActions.cs" Line="8" Column="8" />
+      <File FileName="Assets/Scripts/Controllers/PlayerManager.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/Controllers/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/Controllers/EnemyController.cs" Line="18" Column="36" />
+      <File FileName="Assets/Scripts/ButtonActions.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/TimerScript.cs" Line="15" Column="30" />
+      <File FileName="Assets/Scripts/GameEnd.cs" Line="63" Column="36" />
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="11" Column="5" />
+      <File FileName="Assets/Scripts/PlayerPush.cs" Line="15" Column="34" />
+      <File FileName="Assets/Scripts/EnemyPush.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/ScoreScript.cs" Line="20" Column="17" />
+      <File FileName="Assets/Scripts/MainMenuManager.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +21,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Controllers" expanded="True" />
-                <Node name="ButtonActions.cs" selected="True" />
+                <Node name="MainMenuManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -28,7 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5d054ee3-04c2-47e9-a9a4-e75c54a523f8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="a68680ff-b2e5-401e-bddc-877b84572ca0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

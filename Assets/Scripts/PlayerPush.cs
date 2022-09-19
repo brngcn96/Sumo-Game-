@@ -1,35 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class PlayerPush : MonoBehaviour
 {
 
-    [SerializeField] float force = 3f;
-
-
-
-
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
- 
-        
-    }
-
-
-
+    [SerializeField] float force = 5f;
     
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
-        //Rigidbody rb = collision.collider.gameObject.GetComponent<Rigidbody>();
+
+
+        //Push the enemy when hit
         Rigidbody rb = collision.collider.gameObject.GetComponent<Rigidbody>();
 
         if (rb != null)
@@ -45,10 +28,5 @@ public class PlayerPush : MonoBehaviour
 
 
     }
-
-    
-
-
-
 
 }

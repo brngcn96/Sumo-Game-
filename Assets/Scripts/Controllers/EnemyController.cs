@@ -1,21 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+
 
 public class EnemyController : MonoBehaviour
 {
 
-    [SerializeField] float lookRadius = 1000f;
+    [SerializeField] float lookRadius = 9f;
     Transform target;
+    [SerializeField] float rotationSpeed = 3f;
+    [SerializeField] float moveSpeed = 3f;
     
     
-
-
-    float f_RotSpeed = 5.0f;
-    float f_MoveSpeed = 3f;
-    
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -23,37 +19,26 @@ public class EnemyController : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void LateUpdate()
+    
+    void Update()
     {
         float distance = Vector3.Distance(target.position,transform.position);
-
-
         
         if (distance <= lookRadius)
         {
 
-                /* Look at Player*/
+            // Look at Player
             transform.rotation = Quaternion.Slerp(transform.rotation
                                                       , Quaternion.LookRotation(target.position - transform.position)
-                                                      , f_RotSpeed * Time.deltaTime);
+                                                      , rotationSpeed * Time.deltaTime);
 
-                /* Move at Player*/
-            transform.position += transform.forward * f_MoveSpeed * Time.deltaTime;
+            //Move at Player
+            transform.position += transform.forward * moveSpeed * Time.deltaTime;
 
         }
-        
-
-
 
 
     }
-
-
-
-
-
-
 
 
 

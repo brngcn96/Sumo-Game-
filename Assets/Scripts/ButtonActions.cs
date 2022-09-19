@@ -12,9 +12,10 @@ public class ButtonActions : MonoBehaviour
 
     public void retryButtonClicked()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameOverTextObject.SetActive(false);
         retryButtonObject.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
 
     }
 
