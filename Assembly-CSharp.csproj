@@ -68,7 +68,6 @@
     <Compile Include="Assets/Scripts/GameEnd.cs" />
     <Compile Include="Assets/Scripts/MainMenuManager.cs" />
     <Compile Include="Assets/Scripts/ButtonActions.cs" />
-    <Compile Include="Assets/Travis Game Assets/Hit Impact Effects/Demo Scene/Scripts/HitImpactEffectsPreview.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/DynamicJoystick.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs" />
     <Compile Include="Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs" />
