@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float xValue;
     [SerializeField] float zValue;
     [SerializeField] float speed = 10f;
+    [SerializeField] Joystick joystick;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,8 +32,8 @@ public class PlayerMovement : MonoBehaviour
     
 
     public void moveTouch(){
-            xValue = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-            zValue = Input.GetAxis("Vertical") * Time.deltaTime * speed;
+            xValue = -joystick.Horizontal * Time.deltaTime * speed;
+            zValue = -joystick.Vertical * Time.deltaTime * speed;
             transform.Translate(xValue,0,zValue);
     }
 }
